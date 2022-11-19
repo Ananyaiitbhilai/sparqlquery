@@ -1,5 +1,6 @@
 # sparqlquery
 
+```
 select ?link ?pred ?pred_inv where {
     <http://dbpedia.org/resource/Berlin_Wall> <http://dbpedia.org/ontology/wikiPageWikiLink> ?link .
     optional {
@@ -11,3 +12,4 @@ select ?link ?pred ?pred_inv where {
         filter(?pred_inv != <http://dbpedia.org/ontology/wikiPageWikiLink>)
     }
 } order by ?link
+```
